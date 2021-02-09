@@ -9,7 +9,8 @@ div{
   display: inline-block;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  height: 50px;
+  width: 125px;
   margin: 0;
   text-decoration: none;
   background: #2788D6;
@@ -18,8 +19,8 @@ div{
   font-size: 20px;
   cursor: pointer;
   text-align: center;
-  transition: background 450ms ease-in-out, 
-              transform 150ms ease;
+  transition: background 250ms ease-in-out, 
+              transform 50ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -28,8 +29,6 @@ div{
   box-shadow:
   5px 5px 5px 0px rgba(0, 0, 0, 0); 
   transform: translateY(3px); 
-  /* Moving button 4px to y-axis */ 
 } 
-
 
 button:focus {outline:0;}

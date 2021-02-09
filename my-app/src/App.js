@@ -21,7 +21,6 @@ function handleClick(){
 }
   return (
     <div>
-   
      <button id="myButton" onClick={handleClick}>{counter}  {likes}</button>
     </div>
   );
