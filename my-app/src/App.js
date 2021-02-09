@@ -1,17 +1,28 @@
-import { useState } from 'react';
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+import { useState2 } from 'react';
+
 import './App.css';
 let count = 0
 function App() {
+
+//   useEffect(() => {
+// console.log('lllll', counter)
+//   }, [counter])
   
-const [text, setText] = useState(0)
+const [counter, setCounter] = useState(0) 
+const [likes, setLikes] = useState('likes')
 function handleClick(){
-  setText(count = count + 1)
+  setCounter(count = count + 1)
+  if (count === 1){
+    setLikes('like')
+  }else{
+    setLikes('likes')
+  }
 }
   return (
     <div>
-      {text}
-     <button onClick={handleClick}>likes</button>
+   
+     <button onClick={handleClick}>{counter}  {likes}</button>
     </div>
   );
 }
