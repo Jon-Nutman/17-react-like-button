@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useState2 } from 'react';
 
 import './App.css';
-let count = 0
 function App() {
 
 //   useEffect(() => {
@@ -12,8 +10,8 @@ function App() {
 const [counter, setCounter] = useState(0) 
 const [likes, setLikes] = useState('likes')
 function handleClick(){
-  setCounter(count = count + 1)
-  if (count === 1){
+  setCounter(counter + 1)
+  if (counter === 0){
     setLikes('like')
   }else{
     setLikes('likes')
