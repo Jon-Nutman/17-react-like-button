@@ -3,10 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 function App() {
 
-//   useEffect(() => {
-// console.log('lllll', counter)
-//   }, [counter])
-  
+// Without useEffect
 const [counter, setCounter] = useState(0) 
 const [likes, setLikes] = useState('likes')
 function handleClick(){
